@@ -2,6 +2,7 @@ def isMatch(s: str, p: str) -> bool:
     hasP = False
     hasRP = False
     def starRun(sl, c):
+        ## remove the amount of non star char minus same char in s 
         if c == '.' and len(sl) > 0:
             while len(sl) > 0 and sl[0].isalpha():
                 sl.pop(0)
