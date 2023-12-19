@@ -3,21 +3,31 @@ def isMatch(s: str, p: str) -> bool:
     sl = list(s)
     sp = list(p)
     stotal = 0
+    pdict = {}
+    sdict = {}
 
     for c in s:
+        if c not in sdict:
+            sdict[c] = 1
+        else:
+            sdict[c] += 1 
         stotal += 1
     
     for index in range(len(sp)):
         if sp[index] == '*' or (index < len(sp) - 1 and sp[index+1] == '*'):
             continue
         else:
+            c = sp[index]
+            if c not in pdict:
+                pdict[c] = 1
+            else:
+                pdict[c] += 1
             ptotal +=1
 
     hasP = False
     def starRun(sl, c):
         nonlocal stotal
         nonlocal ptotal
-        ## remove the amount of non star char minus same char in s 
         if c == '.' and len(sl) > 0:
             while len(sl) > 0 and sl[0].isalpha():
                 if stotal > ptotal:
