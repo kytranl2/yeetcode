@@ -14,8 +14,9 @@ def isMatch(s: str, p: str) -> bool:
         stotal += 1
     
     for index in range(len(sp)):
-        if sp[index] == '*' or (index < len(sp) - 1 and sp[index+1] == '*'):
+        if sp[index] == '*':
             continue
+        # or (index < len(sp) - 1 and sp[index+1] == '*')
         else:
             c = sp[index]
             if c not in pdict:
