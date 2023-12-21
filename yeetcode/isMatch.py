@@ -56,7 +56,7 @@ def isMatch(s: str, p: str) -> bool:
                     sl.pop(0)
                     stotal -= 1
                     ptotal -= 1
-            else: ## more pattern
+            else: 
                 hasP = True
 
                 
