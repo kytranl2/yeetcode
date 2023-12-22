@@ -57,9 +57,7 @@ def isMatch(s: str, p: str) -> bool:
                     stotal -= 1
                     ptotal -= 1
             else: 
-                hasP = True
-
-                
+                hasP = True   
         index += 1
 
     if len(sl) == len(s):
