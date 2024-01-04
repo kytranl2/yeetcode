@@ -87,5 +87,5 @@ def isMatch(s: str, p: str) -> bool:
 # print(isMatch("mississippi", "mis*is*ip*."))## T
 # print(isMatch("abbbcd", "ab*bbbcd"))##T
 # print(isMatch("abcdede", "ab.*de"))##T
-# print(isMatch("aaa", "aaaa"))##F
+print(isMatch("aaa", "aaaa"))##F
 print(isMatch("aabcbcbcaccbcaabc", ".*a*aa*.*b*.c*.*a*"))##T
