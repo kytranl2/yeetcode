@@ -1,6 +1,6 @@
 def isMatch(s: str, p:str)-> bool: 
     return False
-# print(isMatch("hhhhddd", "h*d*")) ## T
+print(isMatch("hhhhddd", "h*d*")) ## T
 # print(isMatch("hhhhddd", ".*")) ## T
 # print(isMatch("ddd", "h*d*")) ## T
 # print(isMatch("hit", "h*t")) ## False
