@@ -2,13 +2,25 @@ def isMatch(s: str, p: str) -> bool:
     sl = list(s)
     sp = list(p)
     index = 0
+    result = False
     # def starRun(sl, c):
     #     print(sl)
     while index < len(sp):
-        if index < len(sp) - 1 and sp[index+1] == '*':
-            isMatch(sl, sp)
-            index += 1
-    return True
+        if index < len(sp) - 1:
+            if sp[index+1] == '*':
+                isMatch(s, p[2:])
+                ns = sl.copy()
+                if sp[0] != sl[0]:
+                    return False
+                while len(ns) != 0 and ns[0] == sp[index]:
+                    ns = ns[1:]
+                    isMatch(ns, p[2:])
+                index += 1
+            # elif sp[index] != sl
+    if len(sl) == 0:
+        return True
+    else:    
+        return False
 
 print(isMatch("hhhhddd", "h*d*")) ## T
 # print(isMatch("hhhhddd", ".*")) ## T
