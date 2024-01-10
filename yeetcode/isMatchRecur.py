@@ -3,8 +3,6 @@ def isMatch(s: str, p: str) -> bool:
     sp = list(p)
     index = 0
     result = False
-    # def starRun(sl, c):
-    #     print(sl)
     while index < len(sp):
         if index < len(sp) - 1:
             if sp[index+1] == '*':
