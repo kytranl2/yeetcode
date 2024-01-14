@@ -14,7 +14,6 @@ def isMatch(s: str, p: str) -> bool:
                     ns = ns[1:]
                     isMatch(ns, p[2:])
                 index += 1
-            # elif sp[index] != sl
     if len(sl) == 0:
         return True
     else:    
@@ -36,7 +35,7 @@ print(isMatch("hhhhddd", "h*d*")) ## T
 # print(isMatch("bbbba", ".*a*a")) ## T
 # print(isMatch("ab", ".*..")) ## T
 # print(isMatch("mississippi", "mis*is*ip*."))## T
-# print(isMatch("abbbcd", "ab*bbbcd"))##T
+print(isMatch("abbbcd", "ab*bbbcd"))##T
 print(isMatch("abcdede", "ab.*de"))##T
 print(isMatch("aaa", "aaaa"))##F
 print(isMatch("aabcbcbcaccbcaabc", ".*a*aa*.*b*.c*.*a*"))##T
