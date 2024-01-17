@@ -33,7 +33,7 @@ print(isMatch("hhhhddd", "h*d*")) ## T
 # print(isMatch("aaca", "ab*a*c*a")) ## T
 # print(isMatch("aaa", "ab*a*c*a")) ## T
 # print(isMatch("bbbba", ".*a*a")) ## T
-# print(isMatch("ab", ".*..")) ## T
+print(isMatch("ab", ".*..")) ## T
 print(isMatch("mississippi", "mis*is*ip*."))## T
 print(isMatch("abbbcd", "ab*bbbcd"))##T
 print(isMatch("abcdede", "ab.*de"))##T
