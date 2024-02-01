@@ -26,7 +26,7 @@ def getTrucksForItemsFurtherOptimized(trucks, items):
 
     result = []
     for item in items:
-        # Binary search to find the minimum truck capacity that exceeds the item's weight
+        # Binary search to find the minimum truck capacity. that exceeds the item's weight
         left, right = 0, len(sorted_indices) - 1
         min_index = -1
         while left <= right:
