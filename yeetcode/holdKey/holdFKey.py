@@ -42,4 +42,4 @@ start_thread.start()
 start_thread.join()
 quit_thread.join()
 
-print("Script stopped.")
+print("Script stopped")
