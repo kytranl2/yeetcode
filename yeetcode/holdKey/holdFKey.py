@@ -37,7 +37,7 @@ quit_thread.start()
 
 start_thread = threading.Thread(target=check_start)
 start_thread.start()
-# Wait for the quit thread to finish
+# Wait for the quit thread to finishd
 
 start_thread.join()
 quit_thread.join()
