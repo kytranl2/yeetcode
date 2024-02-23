@@ -45,7 +45,7 @@ public class LotteryCouponOptimized {
         List<Long> exampleK0 = waysToChooseSum(1, 5); // Expected: [5, 1]
         List<Long> exampleK2 = waysToChooseSum(3, 12); // Expected: [1, 2]
 
-        System.out.println("Example 0: " + example0); // Should show ways to achieve max and max winners
+        System.out.println("Example 0: " + example0); // Should show ways to achieve max and max winner
         System.out.println("Example K0: " + exampleK0); // Should show ways to achieve max and max winners
         System.out.println("Example K2: " + exampleK2); // Should show ways to achieve max and max winners
     }
