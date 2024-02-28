@@ -50,7 +50,7 @@ ax.set_xlabel('Date')
 ax.set_ylabel('Sales')
 # Format the date into a readable format
 ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
-plt.gcf().autofmt_xdate() # Rotation
+plt.gcf().autofmt_xdate() # Rotatio
 
 plt.show()
 
