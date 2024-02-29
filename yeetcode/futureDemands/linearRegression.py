@@ -43,7 +43,7 @@ X_test_dates = ordinal_to_datetime(X_test['Date'])
 fig, ax = plt.subplots()
 
 # Visualizing the Training set results
-ax.scatter(X_train_dates, y_train, color = 'red')
+ax.scatter(X_train_dates, y_train, color = 'black')
 ax.plot(X_train_dates, model.predict(X_train), color = 'blue')
 ax.set_title('Sales vs Date (Training set)')
 ax.set_xlabel('Date')
